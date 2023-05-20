@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.opacidad {
+    height: 200px;
+    width: 200px;
+    padding: 20;
+    text-align: center;
+    background-image: url(media/image.jpg);
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/* nav {
+    padding-top: 40px;
+}
+
+#id_hr-header-main {
+    height: 1px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #a6a6a6));
+}
+
+
+header {
+    background: linear-gradient(#d9d9d9, white);
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    height: 6rem;
+}
+
+#id_navbar {
+    list-style-type: none;
+
+}
+
+#id_navbar a {
+    padding: 1rem;
+    border-radius: 5%;
+    color: black;
+    text-decoration: none;
+    margin: 2rem;
+    transition: 0.7s;
+}
+
+#id_navbar a:hover {
+    color: white;
+    background-color: black;
+
+} */
+
+
+main {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+#id_main-galeria p {
+    text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 2rem;
+}
+
+.main-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    margin: 0 15vw 0 15vw;
+    justify-content: center;
+}
+
+.main-gallery img {
+    height: 400px;
+    margin: 1rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 2%;
+}
+
+.main-gallery img:hover {
+    opacity: 0.7;
+    transform: translateY(-3px);
+    transition: 1s;
+}
+
+footer {
+    background-color: black;
+    width: 100vw;
+    padding-top: 40px;
+    color: white;
+    height: 25rem;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+    transition: color .4s ease;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    width: 100vw;
+
+
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
