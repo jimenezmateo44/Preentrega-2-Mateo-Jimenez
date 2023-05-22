@@ -162,3 +162,43 @@ footer {
     font-weight: 400;
     cursor: pointer;
 }
+
+
+@media only screen  and  (max-width: 600px ) {
+
+    *{  
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #id_logo {
+        height: 20%;
+        cursor: pointer;
+    }
+
+    #id_main-text {
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Castoro Titling', cursive;
+        font-size: 4rem;
+        ;
+
+    }
+   
+
+    footer {
+        background-color: black;
+        width: 100%;
+        padding-top: 40px;
+        color: white;
+        height: 30rem;
+    }
+
+    .footer-content p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        padding: 1rem;
+    }
+    
+}
