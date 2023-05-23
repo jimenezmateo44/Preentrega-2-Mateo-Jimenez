@@ -201,3 +201,77 @@ footer {
 .socials a:hover i {
     color: aqua;
 }
+
+@media only screen  and  (max-width: 600px ) {
+
+    *{  
+     overflow-x: hidden;
+    }
+
+    footer {
+        background-color: black;
+        width: 100%;
+        padding-top: 40px;
+        color: white;
+        height: 30rem;
+    }
+
+    .footer-content p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    .footer-bottom {
+        text-align: center; 
+        width: 100vw;  
+    }
+
+    
+    .info-form h2{
+        position: absolute;
+        left: 30vw;
+        top: 12vh;
+    }
+
+    .info-form p {
+        position: absolute;
+        padding: 2rem;
+    }
+
+    .info-form a {
+        display: none;
+    }
+
+    .info-form img {
+        display: none;
+    }
+
+    form {
+        position: absolute;
+        top: 30vh;
+    }
+
+    .container-form form .campo {
+        width: 93vw;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        display: block;
+    }
+   
+    .container-form form textarea {
+        font-size: 17px;
+        font-family: 'Nunito', sans-serif;
+        max-width: 467px;
+        min-width: 467px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .container-form .btn-enviar {
+        margin-left: 35vw;
+    }
+}
