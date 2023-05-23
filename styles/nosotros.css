@@ -5,62 +5,85 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
+    box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-
 }
 
-nav {
-    padding-top: 40px;
-}
+.container {
+    width: 100%;
+    min-height: 100vh;}
 
-/* #id_hr-header-main {
-    height: 1px;
-    border: none;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #a6a6a6));
-}
-
-
-header {
-    background: linear-gradient(#d9d9d9, white);
-    background-color: #d9d9d9;
+.container .titulo {
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    height: 6rem;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #222;
+    letter-spacing: 1.5px;
+    padding: 50px 0px;
 }
 
-#id_navbar {
-    list-style-type: none;
+.container .titulo h1::after {
+    content: "";
+    height: 6px;
+    width: 180px;
+    background-color: #222;
+    border-radius: 6px ;
+    position: relative;
+    display: block;
+    margin: auto;
+     
+}
+
+.content {
+    width: 85%;
+    display: grid;
+    grid-template-columns: (2,1fr);
+    grid-gap: 40px;
+    margin: 30px auto;
 
 }
 
-#id_navbar a {
-    padding: 1rem;
-    border-radius: 5%;
-    color: black;
+.content .article {
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+    background-color: #eee;
+    padding: 25px 25px;
+
+}
+
+.content .article h2 {
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.content .article p {
+    margin-top: 30px;
+    font-size: 19px;
+    line-height: 1.5;
+
+}
+
+.content .article a {
+    font-size: 22px;
     text-decoration: none;
-    margin: 2rem;
-    transition: 0.7s;
+    display: inline-block;
+    padding: 12px 35px;
+    color: black;
+    margin-top: 20px;
 }
 
-#id_navbar a:hover {
-    color: white;
-    background-color: black;
+.seccion-img {
+    width: 100%;
+    margin: auto;
 
-} */
-
-main {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
 }
 
-#id_main-content {
-    padding: 4rem 8rem 8rem 8rem;
-    text-align: justify;
-    font-size: 1.2rem;
+.seccion-img img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -136,4 +159,34 @@ footer {
 
 .socials a:hover i {
     color: aqua;
+}
+
+@media screen and (max-width:900px) {
+    .content {
+        grid-template-columns: (2,1fr);
+    }
+    .article {
+        text-align: center;
+    }
+
+    footer {
+        background-color: black;
+        width: 100%;
+        padding-top: 40px;
+        color: white;
+        height: 30rem;
+    }
+
+    .footer-content p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    .footer-bottom {
+        text-align: center; 
+        width: 100vw;  
+    }
 }
