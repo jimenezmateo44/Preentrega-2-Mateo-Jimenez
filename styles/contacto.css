@@ -12,6 +12,9 @@ body {
 
 }
 
+.info-form h2 {
+    overflow: hidden;
+}
 .container-form {
     height: 100vh;
     width: 100%;

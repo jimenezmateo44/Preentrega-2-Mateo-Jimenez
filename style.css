@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x:hidden;
     
 }
 
@@ -122,6 +123,7 @@ footer {
     font-family: 'Bungee', cursive;
     font-weight: 400;
     cursor: pointer;
+    overflow: hidden;
 }
 
 
