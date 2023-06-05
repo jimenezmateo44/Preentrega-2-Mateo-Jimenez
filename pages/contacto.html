@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../media/dos_gauchitos_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="/scss/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -40,28 +40,35 @@
           </div>
         </div>
       </nav>
-    <main class="container-form">
-        <div class="info-form">
-            <h2>Contactanos</h2>
-            <p>Tu opinion y/o consulta nos interesa. No dudes en enviar un mensaje!</p>
-            <a href="#">
-                <i class="fa fa-phone"></i>123-456-789
-            </a>
-            <a href="#">
-                <i class="fa fa-envelope"></i>dosgauchitos@contacto.com
-            </a>
-            <a href="#">
-                <i class="fa fa-map-marked"></i>Punta Alta, Argentina
-            </a>
-            <img src="../media/dos_gauchitos_logo.png">
-        </div>
-        <form action="#" autocomplete="off">
-            <input type="text" name="Nombre" placeholder="Ingresa tu nombre" class="campo">
-            <input type="email" name="Email" placeholder="Ingresa tu correo" class="campo">
-            <textarea name="mensaje" placeholder="Ingresa tu mensaje" class="campo"></textarea>
-            <input type="submit" name="enviar" value="Enviar mensaje" class="btn-enviar">
+    
+    <main class="container">
+      <div class="row py-5 g-3">
 
-        </form>
+        <div class="col md-6 first_col">
+          <h1 class="text-center">Contactanos!</h1>
+          <h2 class="text-center">Tu consulta nos interesa, no dudes en dejar tu mensaje.</h2>
+          <form class="p-4 mt-5">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Ingresa tu nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Ingresa tu mail</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Deja tu mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <button class="btn">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img src="/media/dos_gauchitos_logo.png" class="logo-contacto img-fluid"> 
+        </div>
+      </div>
 
     </main>
     <footer>

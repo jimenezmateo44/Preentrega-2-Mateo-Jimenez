@@ -1,0 +1,11 @@
+{
+  "name": "preentrega-2-mateo-jimenez",
+  "version": "1.0.0",
+  "description": "Uso de media querys, bootstrap navbar, bootstrap grid y cards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
