@@ -18,73 +18,6 @@ main {
   justify-content: center;
 }
 
-footer {
-  overflow: hidden;
-  background-color: black;
-  width: 100vw;
-  padding-top: 40px;
-  color: white;
-  height: 25rem;
-}
-
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-.footer-content h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 3rem;
-}
-.footer-content p {
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-}
-
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 3rem 0;
-}
-.socials li {
-  margin: 0 10px;
-}
-.socials a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.4s ease;
-}
-.socials a i {
-  font-size: 1.1rem;
-}
-.socials a:hover i {
-  color: aqua;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 20px 0;
-  width: 100vw;
-}
-.footer-bottom p {
-  font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-}
-.footer-bottom span {
-  text-transform: uppercase;
-  opacity: 0.4;
-  font-weight: 200;
-}
-
 .main-content {
   display: inline-block;
 }
@@ -108,50 +41,25 @@ footer {
   font-weight: 400;
   cursor: pointer;
   overflow: hidden;
+  transition: 1s ease;
+}
+#id_main-text-dif:hover {
+  transform: translateY(-5px);
+  color: orangered;
+  letter-spacing: 3px;
+  transition: 1s ease;
 }
 
-@media only screen and (max-width: 600px) {
-  * {
-    overflow-x: hidden;
-  }
-  #id_logo {
-    size: 20%;
-    cursor: pointer;
-  }
-  #id_main-text {
-    cursor: pointer;
-    text-align: center;
-    font-family: "Castoro Titling", cursive;
-    font-size: 2rem;
-  }
-  footer {
-    background-color: black;
-    width: 100%;
-    padding-top: 40px;
-    color: white;
-    height: 30rem;
-  }
-  .footer-content p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    padding: 1rem;
-  }
-  .footer-bottom {
-    text-align: center;
-    width: 100vw;
-  }
-  .content {
-    grid-template-columns: 2, 1fr;
-  }
-  .article {
-    text-align: center;
-  }
-  .logo-contacto {
-    display: none;
-  }
+.nav-link {
+  font-family: "Nunito", sans-serif;
+  transition: 1s ease;
+  border-radius: 8px;
 }
+.nav-link:hover {
+  transition: 1s ease;
+  background-color: orangered;
+}
+
 .galeria {
   display: flex;
   height: -moz-fit-content;
@@ -280,12 +188,129 @@ h2 {
 }
 .container button {
   background-color: #222;
-  color: white;
   transition: 1s ease;
+  color: #eee;
 }
 .container button:hover {
   background-color: white;
   border: 1px solid #222;
   color: #222;
   transition: 1s ease;
+}
+.container button:hover a {
+  color: #222;
+}
+.container button a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  overflow: hidden;
+  background-color: black;
+  width: 100vw;
+  padding-top: 40px;
+  color: white;
+  height: 25rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.4s ease;
+}
+.socials a i {
+  font-size: 1.1rem;
+}
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  width: 100vw;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    overflow-x: hidden;
+  }
+  #id_logo {
+    size: 20%;
+    cursor: pointer;
+  }
+  #id_main-text {
+    cursor: pointer;
+    text-align: center;
+    font-family: "Castoro Titling", cursive;
+    font-size: 2rem;
+  }
+  footer {
+    background-color: black;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+    height: 30rem;
+  }
+  .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    padding: 1rem;
+  }
+  .footer-bottom {
+    text-align: center;
+    width: 100vw;
+  }
+  .content {
+    grid-template-columns: 2, 1fr;
+  }
+  .article {
+    text-align: center;
+  }
+  .logo-contacto {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

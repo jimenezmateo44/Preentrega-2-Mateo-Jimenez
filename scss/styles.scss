@@ -1,5 +1,6 @@
 $color_1: white;
 $color_2: aqua;
+$color-3: orangered;
 $font-family_1: 'Nunito', sans-serif;
 $font-family_2: 'Castoro Titling', cursive;
 $font-family_3: 'Bungee', cursive;
@@ -26,82 +27,6 @@ main {
     justify-content: center;
 }
 
-footer {
-    overflow: hidden;
-    background-color: $background-color_1;
-    width: 100vw;
-    padding-top: 40px;
-    color: $color_1;
-    height: 25rem;
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-
-    h3 {
-        font-size: 1.8rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 3rem;
-    }
-
-    p {
-        max-width: 500px;
-        margin: 10px auto;
-        line-height: 28px;
-        font-size: 14px;
-    }
-}
-
-.socials {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-
-    li {
-        margin: 0 10px;
-    }
-
-    a {
-        text-decoration: none;
-        color: $color_1;
-        transition: color .4s ease;
-
-        i {
-            font-size: 1.1rem;
-        }
-
-        &:hover {
-            i {
-                color: $color_2;
-            }
-        }
-    }
-}
-
-.footer-bottom {
-    text-align: center;
-    padding: 20px 0;
-    width: 100vw;
-
-    p {
-        font-size: 14px;
-        word-spacing: 2px;
-        text-transform: capitalize;
-    }
-
-    span {
-        text-transform: uppercase;
-        opacity: .4;
-        font-weight: 200;
-    }
-}
 
 .main-content {
     display: inline-block;
@@ -126,67 +51,30 @@ footer {
     font-weight: 400;
     cursor: pointer;
     overflow: hidden;
+    transition: 1s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        color: $color-3;
+        letter-spacing: 3px;
+        transition: 1s ease;
+    }
 }
 
-@media only screen and (max-width: 600px) {
-    * {
-        overflow-x: hidden;
-    }
 
-    #id_logo {
-        size: 20%;
-        cursor: pointer;
-    }
+//navbar 
+.nav-link {
+    font-family: $font-family_1;
+    transition: 1s ease;
+    border-radius: 8px;
 
-    #id_main-text {
-        cursor: pointer;
-        text-align: center;
-        font-family: $font-family_2;
-        font-size: 2rem;
+    &:hover {
+        transition: 1s ease;
+        background-color: $color-3;
     }
-
-    footer {
-        background-color: $background-color_1;
-        width: 100%;
-        padding-top: 40px;
-        color: $color_1;
-        height: 30rem;
-    }
-
-    .footer-content {
-        p {
-            max-width: 500px;
-            margin: 10px auto;
-            line-height: 28px;
-            font-size: 14px;
-            padding: 1rem;
-        }
-    }
-
-    .footer-bottom {
-        text-align: center;
-        width: 100vw;
-    }
-
-    //nosotros
-
-    .content {
-        grid-template-columns: (2, 1fr);
-    }
-        
-    .article {
-       text-align: center;
-    }
-
-    // nosotros
-
-    //contacto
-    .logo-contacto {
-        display: none;
-    }
-    //contacto
 }
 
+//navbar
 
 // galeria
 
@@ -334,20 +222,167 @@ h2 {
 
     button {
         background-color: #222;
-        color: white;
         transition: 1s ease;
+        color: #eee;
 
         &:hover {
             background-color: white;
             border: 1px solid #222;
             color: #222;
             transition: 1s ease;
+
+            a {
+                color: #222;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
         }
     }
 }
 
-
-
-
-
 // contacto
+
+
+//footer 
+
+footer {
+    overflow: hidden;
+    background-color: $background-color_1;
+    width: 100vw;
+    padding-top: 40px;
+    color: $color_1;
+    height: 25rem;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+
+    p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+    li {
+        margin: 0 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color_1;
+        transition: color .4s ease;
+
+        i {
+            font-size: 1.1rem;
+        }
+
+        &:hover {
+            i {
+                color: $color_2;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    width: 100vw;
+
+    p {
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+
+    span {
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+    }
+}
+
+// footer
+
+
+@media only screen and (max-width: 600px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    #id_logo {
+        size: 20%;
+        cursor: pointer;
+    }
+
+    #id_main-text {
+        cursor: pointer;
+        text-align: center;
+        font-family: $font-family_2;
+        font-size: 2rem;
+    }
+
+    footer {
+        background-color: $background-color_1;
+        width: 100%;
+        padding-top: 40px;
+        color: $color_1;
+        height: 30rem;
+    }
+
+    .footer-content {
+        p {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+            padding: 1rem;
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        width: 100vw;
+    }
+
+    //nosotros
+
+    .content {
+        grid-template-columns: (2, 1fr);
+    }
+        
+    .article {
+       text-align: center;
+    }
+
+    // nosotros
+
+    //contacto
+    .logo-contacto {
+        display: none;
+    }
+    //contacto
+}
