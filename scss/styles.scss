@@ -1,10 +1,11 @@
 $color_1: white;
 $color_2: aqua;
 $color-3: orangered;
+$color-4: #242424;
 $font-family_1: 'Nunito', sans-serif;
 $font-family_2: 'Castoro Titling', cursive;
 $font-family_3: 'Bungee', cursive;
-$background-color_1: black;
+$background-color_1: #242424;
 
 @import "https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Bungee&display=swap";
@@ -164,36 +165,36 @@ h2 {
     grid-gap: 40px;
     margin: 30px auto;
 
+    .article {
+            box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+            background-color: $color-4;
+            padding: 25px 25px;
+
+                h2 {
+                        font-size: 22px;
+                        line-height: 1.5;
+                        letter-spacing: 1px;
+                        color: $color_1;
+                    }
+                p {
+                        margin-top: 30px;
+                        font-size: 19px;
+                        line-height: 1.5;
+                        color: $color_1;
+                }
+                a {
+                        font-size: 22px;
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 12px 35px;
+                        color: white;
+                        margin-top: 20px;
+                }
+
+            }     
 }
 
-.content .article {
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
-    background-color: #eee;
-    padding: 25px 25px;
-
-}
-
-.content .article h2 {
-    font-size: 22px;
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-
-.content .article p {
-    margin-top: 30px;
-    font-size: 19px;
-    line-height: 1.5;
-
-}
-
-.content .article a {
-    font-size: 22px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 12px 35px;
-    color: black;
-    margin-top: 20px;
-}
+    
 
 .seccion-img {
     width: 100%;
@@ -343,6 +344,12 @@ footer {
         text-align: center;
         font-family: $font-family_2;
         font-size: 2rem;
+    }
+
+    .nav-link {
+        &:hover {
+            background-color: $color_1;
+        }
     }
 
     footer {

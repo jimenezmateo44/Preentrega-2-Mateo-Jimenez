@@ -137,31 +137,29 @@ h2 {
   grid-gap: 40px;
   margin: 30px auto;
 }
-
 .content .article {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
-  background-color: #eee;
+  background-color: #242424;
   padding: 25px 25px;
 }
-
 .content .article h2 {
   font-size: 22px;
   line-height: 1.5;
   letter-spacing: 1px;
+  color: white;
 }
-
 .content .article p {
   margin-top: 30px;
   font-size: 19px;
   line-height: 1.5;
+  color: white;
 }
-
 .content .article a {
   font-size: 22px;
   text-decoration: none;
   display: inline-block;
   padding: 12px 35px;
-  color: black;
+  color: white;
   margin-top: 20px;
 }
 
@@ -207,7 +205,7 @@ h2 {
 
 footer {
   overflow: hidden;
-  background-color: black;
+  background-color: #242424;
   width: 100vw;
   padding-top: 40px;
   color: white;
@@ -286,8 +284,11 @@ footer {
     font-family: "Castoro Titling", cursive;
     font-size: 2rem;
   }
+  .nav-link:hover {
+    background-color: white;
+  }
   footer {
-    background-color: black;
+    background-color: #242424;
     width: 100%;
     padding-top: 40px;
     color: white;
