@@ -116,8 +116,10 @@ h2 {
 .container {
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-
 .container .titulo {
   width: 100%;
   display: flex;
@@ -128,6 +130,32 @@ h2 {
   color: #222;
   letter-spacing: 1.5px;
   padding: 50px 0px;
+}
+.container .logo-contacto {
+  margin-left: 4rem;
+}
+.container h1,
+.container h2,
+.container label {
+  font-family: "Nunito", sans-serif;
+}
+.container button {
+  background-color: #222;
+  transition: 1s ease;
+  color: #eee;
+}
+.container button:hover {
+  background-color: white;
+  border: 1px solid #222;
+  color: #222;
+  transition: 1s ease;
+}
+.container button:hover a {
+  color: #222;
+}
+.container button a {
+  text-decoration: none;
+  color: white;
 }
 
 .content {
@@ -167,40 +195,9 @@ h2 {
   width: 100%;
   margin: auto;
 }
-
 .seccion-img img {
   width: 100%;
   height: auto;
-}
-
-.container {
-  overflow: hidden;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.container .logo-contacto {
-  margin-left: 4rem;
-}
-.container h1, .container h2, .container label {
-  font-family: "Nunito", sans-serif;
-}
-.container button {
-  background-color: #222;
-  transition: 1s ease;
-  color: #eee;
-}
-.container button:hover {
-  background-color: white;
-  border: 1px solid #222;
-  color: #222;
-  transition: 1s ease;
-}
-.container button:hover a {
-  color: #222;
-}
-.container button a {
-  text-decoration: none;
-  color: white;
 }
 
 footer {
