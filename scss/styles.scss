@@ -331,17 +331,23 @@ footer {
         overflow-x: hidden;
     }
 
-    #id_logo {
-        size: 20%;
-        cursor: pointer;
-    }
+    main {
+        display: flex;
+        justify-content: center;
 
-    #id_main-text {
-        cursor: pointer;
-        text-align: center;
-        font-family: $font-family_2;
-        font-size: 2rem;
+        #id_logo {
+                size: 20%;
+                cursor: pointer;
+            }
+        
+            #id_main-text {
+                cursor: pointer;
+                text-align: center;
+                font-family: $font-family_2;
+                font-size: 2rem;
+            }
     }
+   
 
     .nav-link {
         &:hover {

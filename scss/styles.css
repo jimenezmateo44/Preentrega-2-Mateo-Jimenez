@@ -271,11 +271,15 @@ footer {
   * {
     overflow-x: hidden;
   }
-  #id_logo {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  main #id_logo {
     size: 20%;
     cursor: pointer;
   }
-  #id_main-text {
+  main #id_main-text {
     cursor: pointer;
     text-align: center;
     font-family: "Castoro Titling", cursive;
